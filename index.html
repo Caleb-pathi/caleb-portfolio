@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Pathi | Futuristic Portfolio</title>
+  <meta name="description" content="Caleb Pathi portfolio - Software Developer, AI & ML Student, and Video Editor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand" aria-label="Caleb Pathi home">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Caleb Pathi</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#video-editing">Video Editing</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Future-ready developer portfolio</p>
+          <h1 class="hero-title reveal">
+            <span class="line">Caleb</span>
+            <span class="line highlight-text">Pathi</span>
+          </h1>
+          <p class="hero-subtitle reveal">
+            <span id="typing-text">Software Developer | AI &amp; ML Student | Video Editor</span>
+          </p>
+          <p class="hero-description reveal">
+            Engineering polished software experiences, AI-driven ideas, and cinematic edits with a clean, modern visual language.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-primary magnetic" href="Complete_resume_Caleb_final.pdf" download>Download CV</a>
+            <button class="button button-secondary magnetic" type="button" id="preview-cv-btn">Preview CV</button>
+          </div>
+
+          <div class="hero-metrics reveal">
+            <article class="metric-card glass-card">
+              <strong>Developer</strong>
+              <span>Web apps and full-stack problem solving</span>
+            </article>
+            <article class="metric-card glass-card">
+              <strong>AI &amp; ML</strong>
+              <span>Computer Science Engineering at LPU</span>
+            </article>
+            <article class="metric-card glass-card">
+              <strong>Video Editing</strong>
+              <span>Adobe-driven motion and storytelling</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-orb glass-card">
+            <div class="profile-ring"></div>
+            <img src="ChatGPT Image Mar 12, 2026, 07_15_13 PM.png" alt="Profile placeholder for Caleb Pathi">
+          </div>
+          <div class="floating-chip chip-top">AI / ML</div>
+          <div class="floating-chip chip-middle">MERN</div>
+          <div class="floating-chip chip-bottom">EDITOR</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">About</p>
+          <h2>Building sharp interfaces with technical depth.</h2>
+          <p>
+            Caleb Pathi is a Computer Science Engineering student specializing in AI &amp; ML at Lovely Professional University. He is passionate about software development, problem solving, and building modern web applications.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card glass-card tilt-card reveal">
+            <h3>Problem Solving</h3>
+            <p>Breaks complex problems into practical, testable solutions with a focus on reliability.</p>
+          </article>
+          <article class="about-card glass-card tilt-card reveal">
+            <h3>Quick Learner</h3>
+            <p>Adapts quickly to new tools, frameworks, and workflows across engineering and creative work.</p>
+          </article>
+          <article class="about-card glass-card tilt-card reveal">
+            <h3>Adaptability</h3>
+            <p>Comfortable shifting between code, design, experimentation, and production-focused execution.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Skills</p>
+          <h2>Languages, frameworks, and creative tooling.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-column">
+            <h3>Languages</h3>
+            <div class="skills-grid">
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ logo"><span>C++</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo"><span>JavaScript</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo"><span>C</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo"><span>Python</span></article>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3>Frameworks</h3>
+            <div class="skills-grid">
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo"><span>HTML</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo"><span>CSS</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS logo"><span>ReactJS</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo"><span>Node.js</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js logo"><span>Express.js</span></article>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3>Tools / Platforms</h3>
+            <div class="skills-grid">
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo"><span>MySQL</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo"><span>MongoDB</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo"><span>Git</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman logo"><span>Postman</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma logo"><span>Figma</span></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Projects</p>
+          <h2>Selected builds with backend and frontend range.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card tilt-card reveal">
+            <div class="project-image">
+              <img src="food_project.jpg" alt="Food Blog App placeholder">
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Food Blog App</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Caleb-pathi/finalSubmission.git" target="_blank" rel="noreferrer">GitHub</a>
+                  <a href="https://foodblog-frontend-72bn.onrender.com/" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </div>
+              <p>A full-stack food blog application built using Node.js, Express, React.js, and MongoDB with secure authentication.</p>
+              <ul class="feature-list">
+                <li>Recipe CRUD operations</li>
+                <li>JWT authentication</li>
+                <li>User-specific protected content</li>
+                <li>Image uploads with Multer</li>
+                <li>MongoDB recipe storage</li>
+              </ul>
+              <div class="tech-stack">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>JWT</span>
+                <span>Multer</span>
+                <span>Axios</span>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card tilt-card reveal">
+            <div class="project-image">
+              <img src="ytClone.png" alt="YouTube Clone placeholder">
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>YouTube Clone</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Caleb-pathi/youtubeclone.git" target="_blank" rel="noreferrer">GitHub</a>
+                  <a href="https://youtubeclone-sage-ten.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </div>
+              <p>A responsive YouTube clone built using React.js and Tailwind CSS that integrates the YouTube Data API.</p>
+              <ul class="feature-list">
+                <li>Video browsing</li>
+                <li>Dynamic search</li>
+                <li>Real-time video data</li>
+                <li>React Router navigation</li>
+                <li>Reusable components</li>
+              </ul>
+              <div class="tech-stack">
+                <span>React.js</span>
+                <span>JavaScript</span>
+                <span>Tailwind CSS</span>
+                <span>React Router</span>
+                <span>YouTube Data API</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="video-editing" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Video Editing</p>
+          <h2>Motion-focused editing experience.</h2>
+          <p>2 Years of experience creating engaging videos using Adobe After Effects and Adobe Premiere Pro.</p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-tool glass-card reveal">
+            <img src="assets/icons/after-effects.svg" alt="Adobe After Effects icon">
+            <h3>Adobe After Effects</h3>
+          </article>
+          <article class="video-tool glass-card reveal">
+            <img src="assets/icons/premiere-pro.svg" alt="Adobe Premiere Pro icon">
+            <h3>Adobe Premiere Pro</h3>
+          </article>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="showcase-card glass-card reveal">
+            <div class="showcase-preview">
+              <img src="youtube.jpeg" alt="Editing showcase preview">
+              <div class="showcase-overlay">
+                <span class="showcase-badge">Featured Edit</span>
+                <button class="showcase-play magnetic" type="button" data-video-embed="https://www.youtube-nocookie.com/embed/M7lc1UVf-VE?autoplay=1&rel=0&modestbranding=1" data-video-title="Editing Showcase 01">
+                  <span class="play-icon" aria-hidden="true"></span>
+                  <span>Play In Browser</span>
+                </button>
+              </div>
+            </div>
+            <div class="showcase-content">
+              <h3>Editing Showcase 01</h3>
+              <p>Short-form motion edit concept with cinematic pacing, punchy transitions, and browser-based playback inside the portfolio.</p>
+              <div class="showcase-meta">
+                <span>Motion Design</span>
+                <span>Fast Cuts</span>
+                <span>Color Polish</span>
+              </div>
+              <p class="showcase-note"></p>
+            </div>
+          </article>
+          <article class="showcase-card glass-card reveal">
+            <div class="showcase-preview">
+              <img src="todo.jpeg" alt="Editing showcase preview">
+              <div class="showcase-overlay">
+                <span class="showcase-badge">Client Style Reel</span>
+                <button class="showcase-play magnetic" type="button" data-video-embed="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&rel=0&modestbranding=1" data-video-title="Editing Showcase 02">
+                  <span class="play-icon" aria-hidden="true"></span>
+                  <span>Play In Browser</span>
+                </button>
+              </div>
+            </div>
+            <div class="showcase-content">
+              <h3>Editing Showcase 02</h3>
+              <p>Promo-style edit layout focused on clean rhythm, layered motion graphics, and a premium presentation without leaving the page.</p>
+              <div class="showcase-meta">
+                <span>Promo Edit</span>
+                <span>Typography FX</span>
+                <span>Beat Sync</span>
+              </div>
+              <p class="showcase-note"></p>
+            </div>
+          </article>
+          <article class="showcase-card glass-card reveal">
+            <div class="showcase-preview">
+              <img src="youtube.jpeg" alt="Editing showcase preview">
+              <div class="showcase-overlay">
+                <span class="showcase-badge">Social Campaign Edit</span>
+                <button class="showcase-play magnetic" type="button" data-video-embed="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY?autoplay=1&rel=0&modestbranding=1" data-video-title="Editing Showcase 03">
+                  <span class="play-icon" aria-hidden="true"></span>
+                  <span>Play In Browser</span>
+                </button>
+              </div>
+            </div>
+            <div class="showcase-content">
+              <h3>Editing Showcase 03</h3>
+              <p>High-energy social media concept edit built around sharp transitions, visual hooks, and lightweight motion accents.</p>
+              <div class="showcase-meta">
+                <span>Social Edit</span>
+                <span>Hook Frames</span>
+                <span>Snappy Timing</span>
+              </div>
+              <p class="showcase-note"></p>
+            </div>
+          </article>
+          <article class="showcase-card glass-card reveal">
+            <div class="showcase-preview">
+              <img src="todo.jpeg" alt="Editing showcase preview">
+              <div class="showcase-overlay">
+                <span class="showcase-badge">Brand Promo Cut</span>
+                <button class="showcase-play magnetic" type="button" data-video-embed="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?autoplay=1&rel=0&modestbranding=1" data-video-title="Editing Showcase 04">
+                  <span class="play-icon" aria-hidden="true"></span>
+                  <span>Play In Browser</span>
+                </button>
+              </div>
+            </div>
+            <div class="showcase-content">
+              <h3>Editing Showcase 04</h3>
+              <p>Brand-facing promotional edit with polished pacing, layered typography, and a clean presentation flow.</p>
+              <div class="showcase-meta">
+                <span>Brand Promo</span>
+                <span>Text Motion</span>
+                <span>Clean Finish</span>
+              </div>
+              <p class="showcase-note"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Certificates</p>
+          <h2>Recent certifications and coursework.</h2>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="certificate-card reveal">
+            <div class="certificate-card-inner">
+              <div class="certificate-face certificate-front glass-card">
+                <img src="infocerificate.png" alt="Certificate placeholder">
+                <h3>Computational Theory: Language Principle &amp; Finite Automata Theory</h3>
+                <p>Infosys</p>
+              </div>
+              <div class="certificate-face certificate-back glass-card">
+                <h3>Infosys</h3>
+                <p>Computational Theory: Language Principle &amp; Finite Automata Theory</p>
+                <a class="button button-secondary" href="https://drive.google.com/file/d/1wAHG0VmBSAtGIriff_dsNMHSJZyVAWko/view" target="_blank">View Certificate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-card-inner">
+              <div class="certificate-face certificate-front glass-card">
+                <img src="neocolab.png" alt="Certificate placeholder">
+                <h3>Data Structures and Algorithm</h3>
+                <p>Neocolab</p>
+              </div>
+              <div class="certificate-face certificate-back glass-card">
+                <h3>Neocolab</h3>
+                <p>Data Structures and Algorithm</p>
+                <a class="button button-secondary" href="https://drive.google.com/file/d/1hA5eNKefvcGWC4YkcfA_GaPmB1uCtk6p/view" target="_blank">View Certificate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-card-inner">
+              <div class="certificate-face certificate-front glass-card">
+                <img src="computerNetworks.png" alt="Certificate placeholder">
+                <h3>Computer Communications</h3>
+                <p>Coursera</p>
+              </div>
+              <div class="certificate-face certificate-back glass-card">
+                <h3>Coursera</h3>
+                <p>Computer Communications</p>
+                <a class="button button-secondary" href="https://drive.google.com/file/d/15qobp_XkVDswIDoNDULVcIBjDXe_pq7S/view" target="_blank">View Certificate</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Achievements</p>
+          <h2>Competition and event highlights.</h2>
+        </div>
+
+        <div class="timeline achievements-timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>Video Editing Competition</h3>
+              <p>Secured 6th place among 56 participants.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>HACK-IOT Event</h3>
+              <p>Participated in a hackathon event focusing on idea development and teamwork.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Education</p>
+          <h2>Academic timeline.</h2>
+        </div>
+
+        <div class="timeline education-timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>Lovely Professional University</h3>
+              <p>B.Tech Computer Science and Engineering (AI &amp; ML)</p>
+              <span>CGPA: 6.19</span>
+              <small>2023 - Present</small>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>Tirumala Junior College</h3>
+              <p>Intermediate</p>
+              <span>90.3%</span>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>Blossoms English Medium High School</h3>
+              <p>Matriculation</p>
+              <span>98%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="section-heading contact-copy">
+          <p class="section-tag">Contact</p>
+          <h2>Let’s build something sharp and memorable.</h2>
+          <p>Reach out for collaborations, project work, editing opportunities, or product-focused frontend development.</p>
+
+          <div class="contact-meta">
+            <a class="glass-card contact-pill magnetic" href="mailto:pathicaleb2050@gmail.com">pathicaleb2050@gmail.com</a>
+            <a class="glass-card contact-pill magnetic" href="tel:+919550054660">+91-9550054660</a>
+          </div>
+
+          <div class="social-links">
+            <a class="social-link magnetic" href="https://github.com/Caleb-pathi" target="_blank" rel="noreferrer"><img src="assets/icons/github.svg" alt="" aria-hidden="true"><span>GitHub</span></a>
+            <a class="social-link magnetic" href="https://www.linkedin.com/in/caleb-pathi" target="_blank" rel="noreferrer"><img src="assets/icons/linkedin.svg" alt="" aria-hidden="true"><span>LinkedIn</span></a>
+            <a class="social-link magnetic" href="mailto:pathicaleb2050@gmail.com"><img src="assets/icons/email.svg" alt="" aria-hidden="true"><span>Email</span></a>
+            <a class="social-link magnetic" href="https://www.youtube.com/" target="_blank" rel="noreferrer"><img src="assets/icons/youtube.svg" alt="" aria-hidden="true"><span>YouTube</span></a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Your email">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button type="submit" class="button button-primary magnetic">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Caleb Pathi</p>
+      <p>Software Developer | AI &amp; ML Student | Video Editor</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="cv-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel glass-card" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+      <div class="modal-header">
+        <h2 id="cv-modal-title">CV Preview</h2>
+        <button class="modal-close" type="button" aria-label="Close CV preview">&times;</button>
+      </div>
+      <iframe src="Complete_resume_Caleb_final.pdf" title="CV preview"></iframe>
+    </div>
+  </div>
+
+  <div class="modal" id="video-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel glass-card video-modal-panel" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+      <div class="modal-header">
+        <h2 id="video-modal-title">Video Showcase</h2>
+        <button class="modal-close" type="button" aria-label="Close video preview">&times;</button>
+      </div>
+      <iframe id="video-modal-frame" src="" title="Video showcase player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="three-background.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
