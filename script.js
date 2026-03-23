@@ -60,6 +60,31 @@ function closeVideoModal() {
   setModal(videoModal, false);
 }
 
+function getYouTubeEmbedUrl(url) {
+  if (!url) return "";
+
+  try {
+    const parsedUrl = new URL(url);
+    let videoId = "";
+
+    if (parsedUrl.hostname.includes("youtu.be")) {
+      videoId = parsedUrl.pathname.replace("/", "");
+    } else if (parsedUrl.pathname.startsWith("/shorts/")) {
+      videoId = parsedUrl.pathname.split("/")[2] || "";
+    } else {
+      videoId = parsedUrl.searchParams.get("v") || "";
+    }
+
+    if (!videoId) {
+      return url;
+    }
+
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+  } catch (error) {
+    return url;
+  }
+}
+
 previewButton?.addEventListener("click", () => setModal(cvModal, true));
 
 cvModal?.querySelector(".modal-close")?.addEventListener("click", () => setModal(cvModal, false));
@@ -70,7 +95,7 @@ videoModal?.querySelector(".modal-backdrop")?.addEventListener("click", closeVid
 
 videoTriggers.forEach((trigger) => {
   trigger.addEventListener("click", () => {
-    const embedUrl = trigger.getAttribute("data-video-embed");
+    const embedUrl = getYouTubeEmbedUrl(trigger.getAttribute("data-video-embed"));
     const title = trigger.getAttribute("data-video-title") || "Video Showcase";
     if (videoModalTitle) {
       videoModalTitle.textContent = title;
